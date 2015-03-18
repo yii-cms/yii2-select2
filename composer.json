@@ -1,0 +1,28 @@
+{
+  "name": "yii-cms/yii2-select2",
+  "description": "Select2 widget for Yii2 framework.",
+  "keywords": [
+    "yii2",
+    "select2"
+  ],
+  "type": "yii2-extension",
+  "authors": [
+    {
+      "name": "Гонимар Сергей",
+      "email": "sergey.gonimar@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "yiisoft/yii2": ">=2.0",
+    "bower-asset/select2": "4.0.0-RC.2"
+  },
+  "autoload": {
+    "psr-4": {"yiicms\\widgets\\": ""}
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
