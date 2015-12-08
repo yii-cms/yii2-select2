@@ -14,7 +14,7 @@
   ],
   "require": {
     "yiisoft/yii2": ">=2.0",
-    "bower-asset/select2": "4.0.0-RC.2"
+    "bower-asset/select2": "4.0.1"
   },
   "autoload": {
     "psr-4": {"yiicms\\widgets\\": ""}
