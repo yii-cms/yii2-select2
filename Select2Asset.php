@@ -21,4 +21,17 @@ class Select2Asset extends AssetBundle
         'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
+
+    /**
+     * @inheritdoc
+     */
+    public function registerAssetFiles($view)
+    {
+        $language = \Yii::$app->language;
+
+        if (is_file(\Yii::getAlias("{$this->sourcePath}/js/i18n/{$language}.js"))) {
+            $this->js[] = "js/i18n/{$language}.js";
+        }
+        parent::registerAssetFiles($view);
+    }
 }
