@@ -27,7 +27,7 @@ class Select2 extends InputWidget
         if ($this->hasModel()) {
             return Html::activeDropDownList($this->model, $this->attribute, $this->items, $this->options);
         } else {
-            return Html::dropDownList($this->name, $this->selection, $this->items, $this->options);
+            return Html::dropDownList($this->name, $this->value, $this->items, $this->options);
         }
     }
 
